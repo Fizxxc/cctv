@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV KOKOCIIX - Motion Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+</head>
+<body>
+    <h1>CCTV KOKOCIIX</h1>
+    <div class="container">
+        <label for="adminId">Admin ID: </label>
+        <input type="text" id="adminId" placeholder="Masukkan Admin ID">
+        <button onclick="saveAdminId()">Simpan</button>
+        <p id="status"></p>
+        <video id="video" autoplay></video>
+    </div>
+    <audio id="alertSound" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
